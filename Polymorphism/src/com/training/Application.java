@@ -19,8 +19,5 @@ public class Application {
 		System.out.println("Allowance : " +factory.getValue(studObj, "ece"));
 		System.out.println("Allowance : " +factory.getValue(priObj, "engg"));
 	}
-	
-	
-
 
 }
