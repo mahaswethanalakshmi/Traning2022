@@ -11,10 +11,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
-
+@Component
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor
-@Component
+
 @Getter
 public class CustomerList {
 
