@@ -3,6 +3,7 @@ package com.training.service;
 import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import com.training.ifaces.CrudRepository;
 import com.training.model.Book;
@@ -89,10 +90,19 @@ public class BookService implements CrudRepository {
 	
 	public List<Book> getBookGrtThan(double price){
 		
-		Predicate<Double> grtThan = (value) -> value>300.00;
+		List<Book> grtThanList = new ArrayList<>();
+		Predicate<Double> grtThan = (value) -> value>price;
 
-	for
-	{
+		this.bookList.forEach(book ->
+		{double bookPrice = book.getPrice();
+		if(grtThan.test(bookPrice))
+		{
+			grtThanList.add(book);
+		}
+		});
+	
+	}
+
 		
 	
 		
