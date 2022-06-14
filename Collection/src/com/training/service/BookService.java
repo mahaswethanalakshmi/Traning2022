@@ -100,13 +100,14 @@ public class BookService implements CrudRepository {
 			grtThanList.add(book);
 		}
 		});
-	
+	return grtThanList;
 	}
 
 		
 	
 		
-	}}
+	}
+
 	
 	 
 	
@@ -116,7 +117,7 @@ public class BookService implements CrudRepository {
 	
 	
 
-}
+
 
 
 
