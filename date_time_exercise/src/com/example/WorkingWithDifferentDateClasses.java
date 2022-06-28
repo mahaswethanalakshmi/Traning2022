@@ -24,7 +24,7 @@ public class WorkingWithDifferentDateClasses {
 		System.out.println(localDate.getMonthValue());
 		
 		//step 4 local date to sql date 
-		java.sql.Date sqlDate2 = new java.sql.Date.valueOf(localDate);
+		java.sql.Date sqlDate2 = java.sql.Date.valueOf(localDate);
 		System.out.println("SQL Date 2:" +sqlDate2);
 	
 
